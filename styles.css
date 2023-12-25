@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    transform-origin: 50% 100%;
+    z-index: 1;
+  }
+  
+  .hour-hand {
+    width: 5px;
+    height: 60px;
+    background-color: #FF6347; /* Tomato */
+    top: calc(50% - 60px);
+    left: calc(50% - 2.5px);
+  }
+  
+  .minute-hand {
+    width: 3px;
+    height: 80px;
+    background-color: #4682B4; /* Steel Blue */
+    top: calc(50% - 80px);
+    left: calc(50% - 1.5px);
+  }
+  
+  .second-hand {
+    width: 1px;
+    height: 90px;
+    background-color: #00FFFF; /* Cyan */
+    top: calc(50% - 90px);
+    left: calc(50% - 0.5px);
+  }
+  
+  .center-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
